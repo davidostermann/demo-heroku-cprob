@@ -1,0 +1,25 @@
+{
+  "name": "demo-heroku-cprob",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm init - -y```"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidostermann/demo-heroku-cprob.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidostermann/demo-heroku-cprob/issues"
+  },
+  "homepage": "https://github.com/davidostermann/demo-heroku-cprob#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.1"
+  }
+}
