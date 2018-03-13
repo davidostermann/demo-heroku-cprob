@@ -1,9 +1,13 @@
 const express = require('express')
-
+const path = require('path')
 const app = express();
 
+//app.use('/', express.static(__dirname + '/front-react/build'));
+//app.use('/', express.static(__dirname + '/front-angular/dist'));
+app.use('/', express.static(path.join(__dirname, 'front-vue/dist')));
+
 app.get('*', (req, res) => {
-  res.send('Coucou la demo')
+  res.sendFile(path.join(__dirname, 'front-vue/dist/index.html'));
 })
 
 const port = process.env.PORT || 3000

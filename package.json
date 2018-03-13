@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm init - -y```"
+    "postinstall": "cd front-vue && npm install && npm run build"
   },
   "repository": {
     "type": "git",
