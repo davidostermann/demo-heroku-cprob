@@ -2,6 +2,8 @@ const express = require('express')
 const path = require('path')
 const app = express();
 
+app.use('/api', require('./back/app'))
+
 //app.use('/', express.static(__dirname + '/front-react/build'));
 //app.use('/', express.static(__dirname + '/front-angular/dist'));
 app.use('/', express.static(path.join(__dirname, 'front-vue/dist')));
